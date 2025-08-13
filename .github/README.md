@@ -1,4 +1,4 @@
-<h1 align="center"> Electricidad y Magnetismo</h1>
+<h1 align="center"> Física Mecánica</h1>
 <p align="center">
   <img src="./UdeA-Logo.png" width="500px" alt="UdeA"/>
 </p>
