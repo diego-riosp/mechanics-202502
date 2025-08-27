@@ -62,16 +62,21 @@
     \begin{tabular}{|c|c|c|c|c|}
     \hline
      \textbf{Examen} &  \textbf{Porcentaje (\%)}  &  \textbf{Fecha}& \textbf{Modalidad}\\\hline
-     Quiz 1 & 5  &  02/09& Virtual\\\hline
-     Parcial 1 & 20  &  04/09& Virtual\\\hline
-     Quiz 2 & 5  & 30/09& Virtual \\\hline
-     Parcial 2 & 20  & 04/10& Presencial\\\hline
-     Quiz 3 & 5  & 28/10& Virtual\\\hline
-     Parcial 3 (Oral) & 20 & 30/10& Virtual\\\hline
-     Quiz 4 & 5  & 25/11& Virtual\\\hline
+     Quiz 1 & 5  &  04/09& Virtual\\\hline
+     Parcial 1 & 20  &  08/09& Virtual\\\hline
+     Quiz 2 & 5  & 09/10& Virtual \\\hline
+     Parcial 2 & 20  & 11/10& Presencial\\\hline
+     Quiz 3 & 5  & 11/11& Virtual\\\hline
+     Parcial 3 (Oral) & 20 & 13/11& Virtual\\\hline
+     Quiz 4 & 5  & 27/11& Virtual\\\hline
      Parcial 4 & 20  & 29/11& Presencial\\\hline
 \end{tabular}
 \end{table}
+
+Los exámenes parciales 1 y 3 se realizarán en el horario de clase y en la fecha según la programación.
+
+Los exámenes parciales 2 y 4 se realizarán en cada una de las sedes y seccionales según la programación, en el horario 14:00 $-$ 16:00.
+
 \end{frame}
 
 \begin{frame}
@@ -705,4 +710,280 @@ $$\vdots$$        & $$\vdots$$ \\
 
 \textbf{Magnitudes clave:} posición, desplazamiento, velocidad, aceleración, tiempo.
     
+\end{frame}
+
+\begin{frame}{Variables cinemáticas}
+Las magnitudes físicas imperativas en la cinemática son las siguientes.
+
+    \begin{itemize}
+        \item \textbf{Tiempo:} magnitud fundamental que permite ordenar la secuencia de los sucesos (pasado, presente, futuro), medir la duración y la separación entre acontecimientos, y determinar su simultaneidad. Típicamente se denota con la letra $t$.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item \textbf{Posición:} Ubicación de un objeto en el espacio, relativo a un punto de referencia. Se mide en unidades de longitud. Típicamente se denota con la letra $x$ y, en general, es una función del tiempo $x=x(t)$.
+        \item \textbf{Desplazamiento:} Cambio en la posición de un objeto: $$\Delta x = x(t_\text{final})-x(t_\text{inicial}).$$ Se mide en unidades de longitud.
+        \item \textbf{Distancia:} Suma de los valores absolutos de los desplazamientos de un objeto. Típicamente se denota con la letra $d$. Está dada por $$d = \sum_{n=1}^N\lvert\Delta x\lvert_n.$$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Concepto de velocidad}
+    Considerar una partícula que recorre espacios iguales en tiempos iguales. Es decir, su posición respecto de un punto de referencia se incrementa de forma directamente proporcional al tiempo.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\linewidth]{figures/XvsT1.jpg}
+    \end{figure}
+
+    En esta situación, la \textbf{velocidad} se define como la variación de la posición respecto de la variación en el tiempo dentro de los mismos intervalos, es decir, $$v=\frac{x_f-x_0}{t_f-t_0}=\frac{x_j-x_i}{t_j-t_i}=\frac{\Delta x}{\Delta t}.$$
+    
+\end{frame}
+
+\begin{frame}{Velocidad instantanea}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{figures/XvsT2.jpg}
+    \end{figure}
+    
+    En general, para un objeto que se mueva en el espacio, la velocidad instantanea se define como la variación infinitesimal de la posición respecto de un incremento diferencial en el tiempo. Esto es,
+    \begin{equation}
+        v=\frac{dx}{dt}.
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Gráficas de $v$ vs $t$}
+
+Una gráfica de velocidad contra tiempo muestra la evolución temporal de la velocidad instantanea de un sistema en el tiempo. El área bajo la curva de la gŕafica de velocidad contra tiempo en un intervalo de tiempo dado es el desplazamiento del cuerpo en ese intervalo.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\linewidth]{figures/VvsT1.jpg}
+\end{figure}
+
+Por lo tanto, \begin{equation}
+    x(t) = x_0 + \int_{t_0}^tv(t')\,dt'.
+\end{equation}
+    
+\end{frame}
+
+\begin{frame}{Posición de un sistema con velocidad constante}
+
+Si un sistema se mueve con velocidad constante, esto es, $dv/dt=0$, su posición en función del tiempo está dada por la ecuación
+    \begin{equation}
+        x(t)=x_0+v(t-t_0).
+    \end{equation}
+    A este tipo de movimiento se le llama \textit{movimiento rectilineo uniforme}.
+\end{frame}
+
+\begin{frame}{Ejercicio 1}
+    Considere un m\'ovil que se mueve en l\'inea recta sin aceleraci\'on. Se registra su posici\'on en diferentes instantes de tiempo tal que as\'i:
+    \begin{itemize}
+        \item Parte de $x = 2$ m y avanza 8 m hacia adelante en 4 s.
+        \item Luego, retrocede 6 m en 3 s.
+        \item Permanece en reposo en esa posici\'on durante 5 s.
+        \item Finalmente, se mueve 10 m hacia adelante en 5 s.
+    \end{itemize}
+    
+    Basado en la anterior descripci\'on,
+    
+    \begin{itemize}
+        \item[a)] Grafique el movimiento descrito en una gr\'afica de posici\'on contra tiempo.
+        \item[b)] Determine el desplazamiento en cada intervalo. 
+        \item[c)] Calcule el desplazamiento total.
+        \item[d)] Calcule la distancia total recorrida.
+        \item[e)] Calcule la velocidad del móvil en cada tramo.
+        \item[f)] Determine la ecuaci\'on de movimiento para cada tramo.
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Ejercicio 2}
+    Un m\'ovil inicia su movimiento hacia el este con una velocidad constante de $15 \,\text{m/s}$. 3.75 segundos despu\'es, un segundo m\'ovil parte hacia el oeste con velocidad constante de $25 \,\text{m/s}$. Si inicialmente los móviles distaban $20 \,\text{km}$, determine
+    
+    \begin{itemize}
+        \item[a)] Cu\'anto tiempo les tomar\'a encontrarse.
+        \item[b)] Cu\'al es la distancia recorrida por cada uno hasta el punto de encuentro.
+        \item[c)] Cuánto tiempo le tomará al segundo alcanzar al primero si el primero inicialmente partiera hacia el oeste.
+        \item[d)] Cuál es la distancia recorrida por cada uno en la situación del literal (c).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Concepto de aceleración}
+    Considerar una partícula que al desplazarse, cambia su velocidad en incrementos iguales en tiempos iguales, es decir, el cambio de velocidad es directamente proporcional al cambio en el tiempo.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\linewidth]{figures/VvsT2.jpg}
+    \end{figure}
+
+    En esta situación, la \textbf{aceleración} se define como la variación de la velocidad respecto de la variación en el timpo dentro de los mismos intervalos, es decir, $$a=\frac{v_f-v_0}{t_f-t_0}=\frac{v_j-v_i}{t_j-t_i}=\frac{\Delta v}{\Delta t}.$$
+    
+\end{frame}
+
+\begin{frame}{Aceleración instantanea}
+
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{figures/VvsT3.jpg}
+    \end{figure}
+    
+    En general, para un objeto que se mueva en el espacio, la aceleración instantanea se define como la variación infinitesimal de la velocidad respecto de un incremento diferencial en el tiempo. Esto es,
+    \begin{equation}
+        a=\frac{dv}{dt}.
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Gráficas de $a$ vs $t$}
+
+Una gráfica de aceleración contra tiempo muestra la evolución temporal de la aceleración instantanea de un sistema en el tiempo. El área bajo la curva de la gŕafica de aceleración contra tiempo en un intervalo de tiempo dado es el cambio en la velocidad del cuerpo en ese intervalo.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\linewidth]{figures/AvsT1.jpg}
+\end{figure}
+
+Por lo tanto, \begin{equation}
+    v(t) = v_0 + \int_{t_0}^ta(t')\,dt'.
+\end{equation}
+
+\end{frame}
+
+\begin{frame}{Posición de un sistema con aceleración constante}
+
+Si un sistema se mueve con aceleración constante, esto es, $da/dt=0$, su posición en función del tiempo está dada por la ecuación
+    \begin{equation}
+        x(t)=x_0+v_0(t-t_0)+\frac{1}{2}a(t-t_0)^2.
+    \end{equation}
+    A este tipo de movimiento se le llama \textit{movimiento rectilineo uniformemente acelerado}.
+
+    
+    Nótese que si $a=0$, la ecuación de movimiento se transforma en la misma ecuación del movimiento rectilineo uniforme.
+\end{frame}
+
+\begin{frame}{Relación entre posición y velocidad de un sistema con aceleración constante}
+    Si un sistema se mueve con aceleración constante, esto es, $da/dt=0$, su posición en función de la velocidad está dada por \begin{equation}
+        [v(x)]^2=v_0^2+2a(x-x_0).
+    \end{equation} 
+\end{frame}
+
+\begin{frame}{Idealización}
+    En física, una idealización es una simplificación intencionada de un fenómeno o sistema real para hacerlo más manejable o fácil de analizar, asumiendo que ciertos detalles poco relevantes son irreales o pueden ignorarse. Por ejemplo: \begin{itemize}
+        \item Una superficie muy lisa carece de rozamiento.
+        \item Un objeto que cae en las profundidades del mar no se ve afectado por las corrientes marítimas
+        \item Una superficie plana es perfectamente plana.
+        \item Un agujero negro es perfectamente esférico (radio de Schwarzschild).
+    \end{itemize}
+
+    $$\vdots$$
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{figures/vaca-esferica.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/spherical-chiken.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Idealizaciones (hasta nuevo aviso)}
+
+A continuación, se detallan una serie de idealizaciones que usaremos (hasta nuevo aviso) en el curso.
+
+\begin{enumerate}
+    \item Los objetos que se mueven no tienen dimensión.
+    \item El aire no existe.
+    \item Las superficies lisas son perfectamente lisas.
+    \item La aceleración gravitacional es la misma en todos los lugares del planeta tierra.
+\end{enumerate}
+
+    
+\end{frame}
+
+\begin{frame}{Caida libre}
+    Diálogos sobre dos nuevas ciencias (1638) es la última obra de Galileo Galilei, donde resume décadas de investigaciones. En ella, presenta dos pilares clave: la resistencia de los materiales y el movimiento de los cuerpos.
+
+Su impacto en la física fue enorme, ya que:
+
+\begin{itemize}
+    \item Introdujo una descripción matemática del movimiento uniformemente acelerado.
+    \item Sentó las bases de la cinemática moderna.
+    \item Fue precursor del método científico experimental.
+
+    \item Influenció directamente a Newton en la formulación de sus leyes.
+
+    \item La obra marcó el tránsito de la física aristotélica a la física moderna.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+"$[\dots]$ porque así, como la uniformidad 
+del movimiento se define y se concibe por medio de la 
+uniformidad de los tiempos y de los espacios (pues al movimiento 
+le llamamos uniforme, cuando espacios iguales son recorridos 
+en tiempos iguales), así también, por medio de la 
+igualdad, de los intervalos del tiempo, podemos concebir los 
+incrementos de la velocidad simplemente agregados; entendiendo 
+que ese movimiento es acelerado uniformemente y del 
+mismo modo continuamente, siempre que en cualesquiera 
+tiempos iguales se le vayan sobreañadiendo aditamentos iguales 
+de velocidad. De modo que si, tomado un número cualquiera 
+de intervalos iguales de tiempo, a contar desde el primer 
+instante en que el móvil abandona el reposo y comienza el descenso, 
+la velocidad, adquirida durante el primero más el segundo 
+intervalo de tiempo, es doble de aquella que el móvil adquirió 
+durante el primer intervalo solo; la velocidad que adquiere 
+durante tres intervalos de tiempo, es triple; y la que adquiere 
+en cuatro, cuádruple de la velocidad del primer tiempo. 
+    
+\end{frame}
+
+\begin{frame}
+    De 
+modo que (para más clara comprensión), si el móvil continua 
+a su movimiento uniformemente con la velocidad adquirida 
+en el primer intervalo de tiempo, este movimiento sería dos 
+veces más tardo que aquel que hubiera alcanzado con la velocidad 
+adquirida en dos intervalos de tiempo. Y así, no parece 
+repugnar a la recta razón el admitir que el incremento de la velocidad 
+se efectúa según la extensión del tiempo; de donde, la
+definición del movimiento que vamos a tratar, puede ser la siguiente: 
+
+\bigskip
+
+\begin{itemize}
+    \item[] \textit{Llamo movimiento igualmente o uniformemente acelerado 
+aquel que, a partir del reposo, va adquiriendo incrementos 
+iguales de velocidad durante intervalos iguales de tiempo.}"
+\end{itemize}
+
+\bigskip
+\bigskip
+
+\raggedleft{{\textit{Diálogos sobre dos nuevas ciencias}, \textbf{Galileo Galilei (1638)}}}
+
+\end{frame}
+
+\begin{frame}{Conclusión clave}
+    \LARGE \textbf{Cuando un objeto cae en el seno de un campo gravitacional uniforme, describe un movimiento uniformemente acelerado.}
+\end{frame}
+
+\begin{frame}{Ecuaciones de movimiento}
+    La ecuación de movimiento para un objeto que asciende o desciende en caida libre está dada por \begin{equation}
+        y(t)=y_0+v_0(t-t_0)-\frac{1}{2}g(t-t_0)^2,
+    \end{equation} donde $g$ es la aceleración gravitacional y la referencia $y=0$ está en el punto más bajo del espacio (normalmente, el suelo).
+    
+    \vspace{1em}
+    
+    En el planeta Tierra, $$g=\num{9.81}\,\unit{m}/\unit{s}^2.$$
 \end{frame}
