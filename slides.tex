@@ -1063,6 +1063,19 @@ la canasta cuando la motocicleta está en la base del edificio.
 \end{frame}
 
 \begin{frame}{Ejercicio 2}
+    Un hombre está de pie en la azotea de un edificio de 
+$15.0 \,\text{m}$ de altura y lanza una piedra con una velocidad de 
+$30.0 \,\text{m/s}$ a un ángulo de $33.0^\circ$ sobre la horizontal. 
+Puede ignorar la resistencia del aire. Calcule 
+\begin{itemize}
+    \item[a)] la altura máxima que alcanza la piedra sobre la azotea;
+    \item[b)] la magnitud de la velocidad de la piedra justo antes de golpear el suelo; y
+    \item[c)] la distancia horizontal desde la base del edificio hasta el punto donde la piedra golpea el suelo.
+    \item[d)] Dibuje las gráficas $x$--$t$, $y$--$t$, $v_x$--$t$ y $v_y$--$t$ para el movimiento.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ejercicio 3}
  Un pasajero en un 
 tren que se mueve a 80 
 $\unit{km}/\unit{h}$ lanza verticalmente 
@@ -1080,4 +1093,177 @@ lanzamiento. ¿Cae la pelota dentro de la caja?
     \includegraphics[width=0.8\linewidth]{figures/tren-caja.png}
 \end{figure}
    
+\end{frame}
+
+\begin{frame}{Movimiento circular}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{figures/mcua.jpg}
+    \end{figure}
+
+    \footnotesize
+\vspace{-1em}
+    Un sistema que se mueve describiendo un movimiento circular puede parametrizarse utilizando las siguientes variables.
+    
+    
+    \begin{columns}
+    \footnotesize
+        \column{0.48\textwidth}
+        \textbf{Lineales}
+        \begin{itemize}
+            \item $s\,[\unit{m}]$: Posición radial
+            \item $v\,[\unit{m}/\unit{s}]$: Velocidad tangencial
+            \item $a\,[\unit{m}/\unit{s}^2]$: Aceleración tangencial
+        \end{itemize}
+        \column{0.48\textwidth}
+        \textbf{Angulares}
+        \begin{itemize}
+            \item $\varphi\,[\unit{rad}]$: Posición angular
+            \item $\omega\,[\unit{rad}/\unit{s}]$: Velocidad angular
+            \item $\alpha\,[\unit{rad}/\unit{s}^2]$: Aceleración angular
+        \end{itemize}
+    \end{columns}
+    
+\end{frame}
+
+\begin{frame}{Ecuaciones de movimiento}
+    Las ecuaciones de movimiento son equivalentes a las estudiadas:
+    \vspace{1em}
+    \begin{columns}
+        \column{0.48\textwidth}
+        \textbf{Lineales}
+        \begin{itemize}
+            \item $v=\cfrac{ds}{dt}$
+            \item $a=\cfrac{dv}{dt}=\cfrac{d^2s}{dt^2}$
+        \end{itemize}
+        \column{0.48\textwidth}
+        \textbf{Angulares}
+         \begin{itemize}
+            \item $\omega=\cfrac{d\varphi}{dt}$
+            \item $\alpha=\cfrac{d\omega}{dt}=\cfrac{d^2\varphi}{dt^2}$
+        \end{itemize}
+    \end{columns}
+    \vspace{1em}
+    Si la aceleración del sistema es constante, la solución a estas ecuaciones diferenciales resulta en la forma ya conocida.
+
+    \vspace{1em}
+    \begin{columns}
+    
+        \column{0.48\textwidth}
+        \textbf{Lineales}
+        \small
+        \begin{itemize}
+            \item $s=s_0+v_0(t-t_0)+\cfrac{1}{2}a(t-t_0)^2$
+            \item $v=v_0+a(t-t_0)$
+            \item $v^2=v_0^2+2a(s-s_0)$
+        \end{itemize}
+        \column{0.48\textwidth}
+        \textbf{Angulares}
+        \small
+         \begin{itemize}
+            \item $\varphi=\varphi_0+\omega_0(t-t_0)+\cfrac{1}{2}\alpha(t-t_0)^2$
+            \item $\omega=\omega_0+\alpha(t-t_0)$
+            \item $\omega^2=\omega_0^2+2\alpha(\varphi-\varphi_0)$
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Aceleración centrípeta}
+    En este movimiento se presenta un nuevo tipo de aceleración lineal asociado a una fuerza ficticia:
+    \begin{center}
+        $a_c\,[\unit{m}/\unit{s}^2]$: Aceleración centrípeta.
+    \end{center}
+    Este tipo de aceleración verifica las siguiente ecuación:
+
+    \begin{equation}
+        a_c=\frac{v^2}{r}=\omega^2r.
+    \end{equation}
+    De aquí, se deduce que \begin{align}
+        v&=\omega r,\\
+        a&=\alpha r.
+    \end{align}
+    
+\end{frame}
+
+\begin{frame}{Aceleración total}
+    La aceleración total del sistema está dada por
+    \begin{equation}
+        a_{\text{total}}=\sqrt{a^2+a_c^2}.
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Periodo y frecuencia}
+    El periodo se define como el tiempo que le toma a un objeto desarrollar cierta cantidad de revoluciones, estos es, \begin{equation}
+        T=\frac{\text{Tiempo}}{\text{Número de revoluciones}}.
+    \end{equation} La frecuencia es el recíproco del periodo: el número de revoluciones que ejecuta un objeto en cierta cantidad de tiempo, es decir, \begin{equation}
+        f=\frac{\text{Número de revoluciones}}{\text{Tiempo}}.
+    \end{equation} Por lo tanto, \begin{equation}
+        f=\frac{1}{T}
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Ejercicio 1}
+    \item El periodo de traslación de la tierra es de 365.25 días. La distancia de la tierra al sol es de $148.03\times 10^6$ km. Calcular
+	    \begin{itemize}
+	        \item[a)] La frecuencia angular de la tierra en rad/s
+	        \item[b)] La velocidad de traslación de la tierra en km/s
+	        \item[c)] El aceleración centrípeta de la tierra en m/s$^2$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Ejercicio 2}
+    Dos móviles describen una trayectoria circular y salen del mismo punto, en sentidos opuestos con velocidades de $\pi/6$ y $\pi/3$ rad/s. Si el radio de la circunferencia es de 2 m, calcular
+\begin{itemize}
+    \item[a)] El tiempo que tardan en encontrarse.
+    \item[b)] El ángulo barrido por cada uno.
+    \item[c)] La distancia que cada uno recorre.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Quiz 1: Consistencia}
+    Investigar en qué consiste el \textit{movimiento relativo} desde el texto guía de Sears and Zemansky (o Serway):
+
+    \begin{enumerate}
+        \item (0.5) Definición.
+        \item (0.5) Dos ejemplos cualitativos de movimiento relativo en la vida cotidiana.
+        \item (1.0) Dos ejemplos cuantitativos de movimiento relativo con procedimiento analítico (pueden ser obtenidos del texto guía).
+        \item (3.0) Resolver el problema que se presenta en la diapositiva siguiente.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Quiz 1: Problema propuesto}
+    Antonio en su Corvette acelera de acuerdo a $(3.00\hat{\imath}-2.00\hat{\jmath})$ m/s$^2$ mientras Jill en su Jaguar acelera a $(1.00\hat{\imath}+3.00\hat{\jmath})$ m/s$^2$. Ambos parten del reposo en el origen de un sistema coordenado $xy$. Después de $5.00$ s,
+	\begin{itemize}
+	    \item[a)] ¿Cuál es la rapidez de Antonio respecto de Jill?
+	    \item[b)] ¿Qué distancia los separa?
+	    \item[c)] ¿Cuál es la aceleración de Antonio en relación con Jill?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Quiz 1: Rúbrica de evaluación}
+\tiny
+    \begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|M{2cm}|c|m{7cm}|}
+\hline
+\textbf{Criterio} & \textbf{Puntaje} & \textbf{Descripción de desempeño} \\ \hline
+Definición de movimiento relativo & 0.5 & Presenta una definición clara, precisa y acorde al texto guía. Se evalúa la corrección conceptual. \\ \hline
+Dos ejemplos cualitativos & 0.5 & Muestra dos ejemplos de la vida cotidiana que reflejen adecuadamente el concepto de movimiento relativo. Deben ser pertinentes y explicados con claridad. \\ \hline
+Dos ejemplos cuantitativos con procedimiento & 1.0 & Incluye dos ejercicios analíticos completos. Deben estar resueltos paso a paso, con justificación matemática y resultado correcto. \\ \hline
+Resolución del problema asignado & 3.0 & Resuelve el problema planteado. Se evalúa: \begin{itemize}
+    \item Comprensión del enunciado
+    \item Aplicación correcta de fórmulas
+    \item Desarrollo paso a paso
+    \item Claridad en la presentación del resultado
+\end{itemize} \\ \hline
+\textbf{Total} & \textbf{5.0} & \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{center}
+    \textbf{\large Este quiz se monta a la plataforma de Ude@ a más tardar el sábado 06 de septiembre}.
+\end{center}
+
 \end{frame}
