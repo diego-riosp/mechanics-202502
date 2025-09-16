@@ -6,7 +6,7 @@
 
 <hr>
 
-  <a href="https://github.com/diego-riosp/mechanics-202502/releases/latest">![example1](https://img.shields.io/badge/slides-latest_version-brightgreen.svg?style=for-the-badge&logo=github)</a>
+  <a href="https://github.com/diego-riosp/mechanics-202502/releases/latest">![example1](https://img.shields.io/badge/slides-latest_version-brightgreen.svg?style=for-the-badge&logo=github)</a> <a href="https://drive.google.com/drive/folders/1AZVpbVYLI6_MZRNGrPoJwxZgJnwCMTgO?usp=sharing">![example1](https://img.shields.io/badge/DRIVE-MONITORING-blue.svg?style=for-the-badge&logo=google-drive)</a>
 
 </div>
 

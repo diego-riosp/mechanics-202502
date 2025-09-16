@@ -664,7 +664,7 @@ $$\vdots$$        & $$\vdots$$ \\
 
 \begin{frame}
 \begin{center}
-    \Huge \textbf{Capítulo 2}
+    \Huge \textbf{Capítulos 2 y 3}
     
     \LARGE Cinemática
 
@@ -1296,4 +1296,337 @@ la velocidad final de un fragmento.
   \centering
     \includegraphics[width=0.3\textwidth]{figures/E.png}
 \end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+    \Huge \textbf{Capítulo 4}
+    
+    \LARGE Dinámica
+
+    \textit{Leyes del movimiento de Newton}
+\end{center}
+    
+\end{frame}
+
+\begin{frame}{Dinámica}
+    ¿Qué ocasiona que los cuerpos se muevan como lo hacen?
+
+    Tres formalismos
+    \begin{center}
+    
+        \textbf{Newton}
+        \begin{equation*}
+            \boxed{\vec{F}=m\vec{a}}
+        \end{equation*}
+
+        \textbf{D'Alembert}
+        \begin{equation*}
+        \vec{R}_i\cdot\delta\vec{r}_i=0
+        \end{equation*}
+        
+        \textbf{Hamilton y Lagrange}
+        \begin{align*}
+            &\frac{\partial\mathcal{L}}{\partial q}-\frac{d}{dt}\left(\frac{\partial\mathcal{L}}{\partial\dot{q}}\right)=0\\
+            &\mathcal{H}=p\dot{q}-\mathcal{L}
+        \end{align*}
+    \end{center}
+        
+\end{frame}
+
+\begin{frame}{Sistema y entorno}
+    Un \emph{sistema} puede estar conformado por uno o más objetos. Todo lo que no está incluido en el sistema es parte del \textbf{entorno}.
+\end{frame}
+
+\begin{frame}{Concepto de fuerza}
+    Fuerza $\mathbf{F}$: La fuerza cuantifica la cantidad de interacción entre dos objetos. Como la fuerza tiene una determinada magnitud y se ejerce en una dirección, entonces es un vector
+
+Ejemplos:
+\begin{itemize}
+\item Fuerza repulsiva entre un protón y otro protón.
+\item La fuerza gravitacional atractiva que la tierra ejerce sobre usted.
+\item La fuerza que un resorte comprimido ejerce sobre su mano.
+\item La fuerza en una nave espacial de los gases expandiéndose en la
+  maquinaria del cohete.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Tipos de fuerza}
+
+\begin{columns}
+    \column{0.45\textwidth}
+    \textbf{Fuerza normal ($\vec{n}$)}: Cuando un objeto descansa o se empuja sobre una superficie, esta ejerce un empujón sobre el objeto que es perpendicular a la superficie.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/normal.png}
+    \end{figure}
+    
+    \column{0.45\textwidth}
+    \textbf{Fuerza de fricción ($\vec{f}$)}: Además de la fuerza normal, una superficie puede ejercer una fuerza de fricción sobre un objeto que es paralela a la superficie.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{figures/friccion.png}
+    \end{figure}
+\end{columns}
+    
+\end{frame}
+
+\begin{frame}
+    \begin{columns}
+    \column{0.45\textwidth}
+    \textbf{Fuerza de tensión ($\vec{T}$)}: La fuerza de un tirón ejercida sobre un objeto por una cuerda, un cordón, etcétera.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/tension.png}
+    \end{figure}
+    
+    \column{0.45\textwidth}
+    \textbf{Peso ($\vec{w}$)}: El tirón de la gravedad sobre un objeto es una fuerza de largo alcance (una fuerza que actúa a la distancia).
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\linewidth]{figures/peso.png}
+    \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \Huge ¿Preguntas?
+    \end{center}
+\end{frame}
+
+\begin{frame}{Medición de la fuerza}
+    Para describir una fuerza vectorial, debemos indicar la dirección en la cual actúa, así como su magnitud, es decir, la cantidad que describe “cuánto” o “qué tanto” la fuerza empuja o tira. La unidad de magnitud de fuerza en el SI es el newton, que se abrevia N. Usualmente se utiliza el \textit{dinamómetro} para medir fuerzas. \textbf{Ejemplos:}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/image.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Superposición de fuerzas}
+    Puesto que las fuerzas son cantidades vectoriales (vectores libres), pueden ser sumadas tal que en un sistema, la fuerza total o resultante resulta ser \begin{equation}
+        \vec{F}_{\text{Total}}=\sum_{i=1}^N\vec{F}_i=\vec{F}_1+\vec{F}_2+\vec{F}_3+\dots+\vec{F}_{N-1}+\vec{F}_N.
+    \end{equation}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\linewidth]{figures/superposicion.png}
+    \end{figure}
+    En la figura, $\vec{R}$ está dada por 
+    \begin{equation}
+    \vec{R}=(F_{1x}+F_{2x})\hat{\imath}+(F_{1y}+F_{2y})\hat{\jmath}.
+\end{equation}
+\end{frame}
+
+\begin{frame}{Sistemas inerciales}
+Considere ahora dos sistemas de referencia con $S:(x,y,z,t)$ en reposo
+y $S':(x',y',z',t')$ moviéndose a velocidad constante
+$\mathbf{V}$.
+\vspace{1em}
+
+    \pause Sea $\mathbf{r}$ el vector de posición de un cuerpo relativo al
+primer sistema de referencia, y $\mathbf{r}'$ su vector de posición
+relativo al segundo.
+Asumiendo que los sistemas de referencia coinciden en el tiempo
+$t=t'=0$, entonces
+\begin{align}
+  \mathbf{r}(t)=\mathbf{r}'(t)+\mathbf{R}(t)\,,
+\end{align}
+
+\pause donde el sistema de coordenadas primado se mueve con velocidad
+$\mathbf{V}$ a largo de $\mathbf{R}$:
+\begin{align}
+  \mathbf{R}(t)=\mathbf{V}\, t\,,
+\end{align}
+\end{frame}
+
+\begin{frame}
+    Al derivar,
+    \begin{align}
+  \mathbf{v}'(t)=\mathbf{v}(t)-\mathbf{V}\,.
+\end{align}
+Pero para la aceleración:
+\begin{align}
+  \mathbf{a}'=\mathbf{a}\,,
+\end{align} de modo que \textbf{si la velocidad relativa entre los sistemas es constante,
+la aceleración de un objeto vista desde los dos sistemas de referencia
+es la misma}.
+
+\vspace{1em}
+
+\begin{center}
+    \Large Hemos definido qué es un sistema inercial.
+\end{center}
+
+\pause \textit{(Un sistema de coordenadas
+inercial es un sistema de coordenadas que se mueve a velocidad
+constante)}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \Huge ¿Preguntas?
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        {\Huge \textbf{LEYES DE NEWTON}}
+        
+        (así, \textit{en mayúscula})
+    \end{center}
+\end{frame}
+
+\begin{frame}{Primera ley de Newton}
+    \textbf{Ley de la inercia}: Los cuerpos aislados se mueven
+uniformemente con respecto a sistemas inerciales.
+
+\vspace{1em}
+
+Un cuerpo sobre el que no actúan fuerzas se llama \emph{cuerpo libre}.
+
+\vspace{1em}
+
+Dicho de otra forma:
+\begin{center}
+    \textit{Un cuerpo sobre el que no actúa una fuerza neta se mueve con velocidad constante (que puede ser cero) y aceleración cero.}
+\end{center}
+\vspace{1em}
+
+Esto es, \begin{equation*}
+    \sum_i\vec{F}_i=\vec{0}\Rightarrow\vec{a}=\frac{d\vec{v}}{dt}=\vec{0}
+\end{equation*}
+
+La tendencia de un cuerpo a seguir moviéndose una vez iniciado su movimiento es resultado de una propiedad llamada \textbf{inercia}.
+
+\end{frame}
+
+\begin{frame}{Ejemplos}
+    \section*{Ejemplos de la Ley de Inercia de Newton}
+
+\textbf{Objetos en Reposo}
+\begin{itemize}
+    \item \textbf{Libro sobre una mesa:} El libro no se mueve porque no hay ninguna fuerza neta que lo empuje. Solo actúan fuerzas equilibradas: su peso hacia abajo y la fuerza de la mesa hacia arriba.
+    \item \textbf{Balón en el suelo:} El balón permanece quieto hasta que alguien le aplica una fuerza (lo patea).
+\end{itemize}
+
+\textbf{Objetos en Movimiento}
+\begin{itemize}
+    \item \textbf{Pasajero en un carro que frena bruscamente:} El cuerpo del pasajero tiende a seguir en movimiento hacia adelante (su velocidad inicial), por eso se lanza hacia el frente cuando el carro se detiene de golpe.
+    \item \textbf{Platos sobre un mantel cuando se jala rápidamente:} Si jalas con rapidez el mantel, los platos quedan casi en el mismo lugar porque tienden a mantener su estado de reposo.
+    \item \textbf{Pelota rodando sobre una superficie lisa:} Si no hay fricción ni otras fuerzas que la detengan, la pelota seguiría rodando indefinidamente con velocidad constante.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Concepto de momentum}
+    La primera Ley de Newton no permite hacer predicciones cuantitativas. Para hacer estas predicciones se requiere una medida que cuantifique los efectos de la interacciones. Surge entonces la pregunta: ¿qué factores hacen difícil o fácil cambiar la velocidad de un objeto?
+
+\vspace{1em} Probablemente habrá notado que si dos objetos tienen la misma velocidad pero uno es más liviano que el otro, es más difícil cambiar la velocidad del objeto más masivo. 
+
+\vspace{1em}  Es más fácil detener una bola de beisbol viajando a $\SI{100}{\kilo\meter\per\hour}$, que un camión viajando a $\SI{100}{\kilo\meter\per\hour}$.
+
+Es más fácil cambiar la dirección de una canoa que la dirección del Titanic.
+
+\vspace{1em} Una cantidad que se puede entonces asociar con el cambio de movimiento de un cupero es el \emph{moméntum} o \emph{cantidad de movimiento} instantáneo de una partícula de masa $m$ moviendo con velocidad instantánea $\mathbf{v}$
+\begin{align}
+  \mathbf{p}=&m \mathbf{v}
+\end{align}
+\end{frame}
+
+\begin{frame}{Segunda ley de Newton}
+    \textbf{Ley fundamental de la dinámica}: El cambio de moméntum de un sistema es igual a la fuerza neta actuando sobre el sistema veces la duración de la interacción.
+
+    Esto es, \begin{equation*}
+        \Delta\vec{p}\approx\vec{F}\Delta t.
+    \end{equation*} De aquí, se deduce que \begin{align*}
+        \vec{F}&=\frac{d\vec{p}}{dt}\\&=\frac{d\vec{m\vec{v}}}{dt}\\&=m\frac{d\vec{v}}{dt}+\vec{v}\frac{dm}{dt}\\&=m\vec{a}+\vec{v}\frac{dm}{dt}.
+    \end{align*}
+\end{frame}
+
+\begin{frame}
+Si la masa del sistema es invariante, \begin{equation}
+        \boxed{\vec{F}=m\vec{a}}\,.
+    \end{equation}
+
+    Dicho de otra forma:
+    \begin{center}
+        \textit{Si una fuerza externa neta actúa
+sobre un cuerpo, este se acelera. La dirección de la aceleración es la misma que la
+de la fuerza neta. El vector de fuerza neta es igual a la masa del cuerpo multiplicada
+por su aceleración}.
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    La fuerza neta actuando en un sistema en un instante es el vector de
+suma de todas la fuerzas ejercidas sobre el sistema por todos los
+objetos del entorno, las cuales son llamadas fuerzas externas. Puede
+haber fuerzas internas al sistema, ejercidas por un objeto del sistema
+en otro objeto del sistema, pero tales fuerzas internas no pueden
+cambiar el moméntum del sistema.
+\end{frame}
+
+\begin{frame}{Unidades de medida de la fuerza}
+    De esta ley podemos ver que las dimensiones de una fuerza $F$ son 
+\begin{align*}
+[F]=[M L/T^2]\,,
+\end{align*}
+que en unidades SI define el newton como 
+\begin{align*}
+\SI{1}{N}=\si{kg\cdot m/s^2}\,.
+\end{align*}
+\end{frame}
+
+\begin{frame}{Ejemplo}
+    Un disco plano de masa $m=\SI{2}{\kilo\gram}$, se desliza sobre un lago congelado con una rapidez inicial de $v=\SI{5}{\meter\per\second}$. La fuerza de fricci\'on tiene un valor constante de $f=\SI{4}{\newton}$ opuesta al movimiento. ¿cuán lejos avanza el disco antes de detenerse?
+\end{frame}
+
+\begin{frame}{Tercera Ley de Newton}
+    Las fuerzas siempre aparecen en pares: si un cuerpo $b$ ejerce una fuerza $\mathbf{F}_a$ en un cuerpo $a$, entonces debe haber otra fuerza $\mathbf{F}_b$ actuando en el cuerpo $b$, debido al cuerpo $a$, tal que
+\begin{align}
+  \mathbf{F}_b=-\mathbf{F}_a\,.
+\end{align}
+En otras palabras
+\begin{align}
+  \text{acci\'on}=-\text{reacci\'on}\,.
+\end{align}
+
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{figures/ac-reac.png}
+    \end{figure}
+
+    Dicho de otra forma, \begin{center}
+    \textit{Si el cuerpo A ejerce una fuerza sobre
+el cuerpo B (una “acción”), entonces, el cuerpo B ejerce una fuerza sobre el cuerpo A
+(una “reacción”). Estas dos fuerzas tienen la misma magnitud pero dirección opuesta,
+y actúan sobre cuerpos diferentes.}
+\end{center}
+
+    Si un cuerpo aislado sufre una aceleraci\'on y no podemos encontrar un objeto externo que sufre una aceleraci\'on igual pero opuesta, entonces estaremos en problemas. Un ejemplo mas típico de un par acción-reacción es el de dos patinadores sobre hielo intercambiando una pelota.
+\end{frame}
+
+\begin{frame}{Ejercicio}
+
+Dos adultos y un ni\~no quieren empujar un carrito con ruedas en la direcci\'on $x$ como se ilustra en la figura. 
+Los adultos empujan con fuerzas horizontales $F_1$ y $F_2$ como se muestra en la figura. 
+
+\begin{enumerate}
+    \item[(a)] Calcule la magnitud y direcci\'on de la fuerza \textit{m\'as peque\~na} que el ni\~no debe ejercer. Se pueden despreciar los efectos de la fricci\'on.
+    \item[(b)] Si el ni\~no ejerce la fuerza m\'inima obtenida en el inciso (a), el carrito acelerar\'a a $2.0\,\unit{m/s^2}$ en la direcci\'on $+x$. \\
+    \textquestiondown Cu\'anto pesa el carrito?
+\end{enumerate}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.3\linewidth]{figures/p1newton.png}
+\end{figure}
+    
 \end{frame}
