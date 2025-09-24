@@ -1856,11 +1856,11 @@ En otras palabras, cuando un objeto intenta deslizarse o moverse sobre otro, apa
 \begin{frame}{Coeficientes de fricción}
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\linewidth]{figures/coef-fric.png}
+        \includegraphics[width=0.4\linewidth]{figures/coef-fric.png}
     \end{figure}
 \end{frame}
 
-\begin{Ejemplo}
+\begin{frame}{Ejemplo}
     Una caja de bananas que pesa 40.0 N descansa en una superficie horizontal. El coeficiente de fricción estática entre la caja y la
 superficie es de 0.40, y el coeficiente de fricción cinética es de 0.20.
 \begin{itemize}
@@ -1872,7 +1872,8 @@ caja siga moviéndose con velocidad constante, una vez que haya comenzado a move
 \item[e)] Si el mono aplica una fuerza horizontal de 18.0 N, ¿qué magnitud tiene la fuerza de fricción y qué aceleración
 tiene la caja?
 \end{itemize}
-\end{Ejemplo}
+
+\end{frame}
 
 \begin{frame}{Fuerza viscosa}
 
@@ -1932,4 +1933,116 @@ donde:
         \centering
         \includegraphics[width=1\linewidth]{figures/vel-terminal.png}
     \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \Huge \textbf{Dinámica del movimiento circular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Aceleración centrípeta}
+    Cuando una partícula describe una circunferencia con rapidez constante, su aceleración siempre es hacia el centro de la circunferencia (perpendicular a la velocidad instantánea). La magnitud $a_c$ de la aceleración es constante y está dada en términos de la rapidez $v$ y el radio $r$ de la circunferencia por \begin{equation}
+        a_c = \frac{v^2}{r}=\omega^2r=\frac{4\pi^2r}{T^2}=4\pi^2rf^2
+    \end{equation}
+
+    La fuerza central responsable del movimiento circular es conocida como \textit{fuerza centrípeta} $\vec{F}_c$. De acuerdo con Newton, \begin{equation}
+        F_c = ma_c
+    \end{equation}
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \column{0.45\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{figures/Fcpta.png}
+    \end{figure}
+    \column{0.45\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{figures/acepta.png}
+    \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Ejemplo}
+    El automóvil deportivo de la figura recorre una
+curva de radio $R$. Si el coeficiente de fricción
+estática entre los neumáticos y la carretera es $\mu_s$, ¿cuál es la rapidez
+máxima con que el conductor puede tomar la curva sin derrapar?
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/sin-peralte.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Ejemplo}
+    Para un automóvil que viaja con cierta rapidez, es posible peraltar una curva con un ángulo tal que el automóvil no necesite fricción para mantener el radio con que da vuelta. Entonces el automóvil podría tomar con seguridad la curva aun sobre hielo húmedo. (Las carreras de trineos se basan en la misma idea). Un ingeniero propone reconstruir la curva
+del ejemplo anterior de modo que un automóvil con rapidez $v$ pueda dar la
+vuelta sin peligro aunque no haya fricción. ¿Qué ángulo
+de peralte $\beta$ debería tener la curva?
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/con-peralte.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Ejercicio}
+    Un bloque pequeño de masa $m$ se coloca dentro de un cono invertido que gira sobre un eje vertical, de modo que la duración de una revolución del cono es $T$. La pared del cono forma un ángulo $\beta$ con la horizontal. El coeficiente de fricción estática entre el bloque y el cono es $\mu_s$. Si el bloque debe mantenerse a una altura constante $h$ sobre el vértice del cono,
+    \begin{itemize}
+        \item[a)] ¿Cuál es el valor máximo de $T$?
+        \item[b)] ¿el valor mínimo de $T$?
+    \end{itemize}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.35\linewidth]{figures/cono-rev.png}
+    \end{figure}
+    
+\end{frame}
+
+\begin{frame}{Ejercicio}
+    El bloque de 4.00 kg
+de la figura está sujeto a
+una varilla vertical con dos cuerdas. Cuando el sistema gira en
+torno al eje de la varilla, las cuerdas se extienden como se indica
+en el diagrama, y la tensión en
+la cuerda superior es de 80.0 N.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.25\linewidth]{figures/dos-cuerdas.png}
+\end{figure}
+
+\begin{itemize}
+    \item[a)] ¿Qué tensión hay en la cuerda
+inferior?
+\item[b)] ¿Cuántas revoluciones por minuto realiza el sistema?
+\item[c)] Calcule las revoluciones por minuto con las que la cuerda inferior pierde su tensión. 
+\item[d)] Explique qué sucede si el número de rpm es menor que en el inciso c).
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Ejercicio}
+    El “columpio gigante” de una feria local consiste en un eje vertical central con varios brazos horizontales unidos a su extremo superior. Cada brazo sostiene un asiento suspendido
+de un cable de 5.00 m, sujeto al brazo en un punto a 3.00 m del eje
+central.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.35\linewidth]{figures/juego-feria.png}
+\end{figure}
+
+\begin{itemize}
+    \item[a)] Calcule el tiempo de una revolución del columpio, si el
+cable forma un ángulo de 30.0° con la vertical.
+    \item[b)] ¿El ángulo depende
+del peso del pasajero para una velocidad de giro determinada?
+\end{itemize}
 \end{frame}
