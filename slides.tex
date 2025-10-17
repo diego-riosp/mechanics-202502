@@ -2849,3 +2849,61 @@ z_\text{cm}=\cfrac{\displaystyle\sum_{i=1}^N m_i z_i}{\displaystyle\sum_{i=1}^N 
 \begin{frame}{Ejemplo 3}
     En un anuncio se asegura que un centrifugador solo ocupa 0.127 m de espacio en una mesa de trabajo, pero que puede producir una aceleración radial de $3000g$ a 5000 $\text{rev}/\text{min}$. Calcule el radio que debe tener el centrifugador. ¿Es verosímil el anuncio?
 \end{frame}
+
+\begin{frame}{Energía cinética rotacional}
+    La energía cinética de una partícula está dada por \begin{align*}
+        K=\frac{1}{2}mv^2\,,
+    \end{align*} si la partícula describe un movimiento circular se sabe $v=r\omega$, por lo tanto, \begin{align*}
+        K=\frac{1}{2}mr^2\omega^2\,.
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Sistema de partículas discreto}
+    Para un sistema de partículas $m_1,\,m_2,\,\dots,\,m_N$ que se mueve con igual velocidad angular $\omega$, la energía cinética total es \begin{align*}
+        K=\frac{1}{2}\left(\sum_{i=1}^Nm_ir_i^2\right)\omega^2\,.
+    \end{align*} La cantidad \begin{align*}
+        I=\sum_{i=1}^Nm_ir_i^2\,
+    \end{align*} se conoce como \textit{momento de inercia} del sistema de partículas. Por lo tanto, la energía cinética rotacional está dada por \begin{align*}
+        K=\frac{1}{2}I\omega^2\,.
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Sistema de partículas continuo}
+    Para un sistema de partículas continuo como un objeto sólido, se generaliza el momento de inercia sumando los elementos diferenciales de masa respecto su distancia al eje de giro del sistema, esto es, \begin{align*}
+        I=\int dm\,r^2\,.
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Momentos de inercia de sistemas continuos}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{figures/momentos-de-inercia.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Ejemplo 1}
+    Bloques pequeños de masa $m$ están sujetos en los extremos y en el centro de una varilla de longitud $L$ y masa despreciable. Calcule el momento de inercia del sistema alrededor de un eje perpendicular a la varilla y que pasa por
+    
+    \begin{itemize}
+        \item[a)] el centro de la varilla y
+        \item[b)] un punto a un cuarto de su longitud a partir de un extremo.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Ejemplo 2}
+    Una polea sin fricción tiene la forma de un disco sólido uniforme de masa igual a 2.50 kg y radio de 20.0 cm. Una piedra de 1.50 kg se sujeta a un alambre muy ligero que se enrolla alrededor del borde de la polea, y el sistema se libera del reposo.
+    \begin{itemize}
+        \item[a)] ¿Qué distancia debe descender la piedra para que la polea tenga 4.5 J de energía cinética?
+        \item[b)] ¿Qué porcentaje de la energía cinética total tiene la polea?
+    \end{itemize}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.3\linewidth]{figures/polea-roca.png}
+    \end{figure}
+    
+\end{frame}
+
+\begin{frame}{Ejemplo 3}
+    Una cubeta de masa $m$ se ata a un cable de masa despreciable que se enrolla alrededor del borde exterior de una polea uniforme sin fricción de radio $R$, similar al sistema que se presenta en el problema anterior. En términos de las variables indicadas, ¿cuál debe ser el momento de inercia de la polea, de forma que siempre tenga la mitad de la energía cinética de la cubeta?
+\end{frame}
