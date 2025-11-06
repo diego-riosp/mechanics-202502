@@ -2950,17 +2950,185 @@ después de que $m_1$ pierde contacto con el resorte.
     Determine el momento de inercia de una placa delgada de dimensiones $a\times b$ que gira alrededor de un eje que pasa paralelamente por una de sus aristas.
 \end{frame}
 
-% \begin{frame}{Ejercicio 1}
-%     Una partícula está suspendida de un poste en lo alto de un carro mediante una cuerda ligera de longitud $L$, como se muestra en la figura. El carro y la partícula inicialmente se mueven hacia la derecha con rapidez constante, con la cuerda vertical. Súbitamente, el carro llega al reposo cuando choca y se une a un amortiguador, como se muestra en la figura. La partícula suspendida se balancea a través de
-% un ángulo $\theta$. 
+\begin{frame}
+    \begin{center}
+        \Huge \textbf{Unidad 4}
+        
+        \large Dinámica del sólido rígido
+    \end{center}
+\end{frame}
 
-% \begin{figure}
-%     \centering
-%     \includegraphics[width=0.25\linewidth]{figures/carro-pendulo.png}
-% \end{figure}
+\begin{frame}
+    Un sólido rígido se define como aquel cuya distancia entre partículas que lo componen permanece invariante ante esfuerzos aplicados (objeto totalmente inelástico).
+\end{frame}
 
-% \begin{itemize}
-%     \item[a)] Determine una expresión para la rapidéz inicial del carro.
-%     \item[b)] ¿El amortiguador aún ejerce una fuerza horizontal en el carro cuando la partícula colgante está en su ángulo máximo desde la vertical? ¿En qué momento del movimiento observable el amortiguador deja de ejercer una fuerza horizontal en el carro?
-% \end{itemize}
-% \end{frame}
+\begin{frame}{Velocidad angular como un vector}
+
+    $\omega_z$ es la componente $z$ del vector velocidad angular $\vec{\omega}$ dirigido a lo largo del eje de rotación. La dirección de $\vec{\omega}$ está dada por la regla de la mano derecha.
+    
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/omega-vector.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Torque}
+    El torque ejecutado sobre un sistema por una fuerza $\vec{F}$ en un punto cuya posición es $\vec{r}$ respecto del punto de giro del sistema, está <dado por la expresión \begin{equation*}
+        \vec{\tau}=\vec{r}\times\vec{F}\,.
+    \end{equation*}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{figures/torque-example1.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Ejemplo 1}
+    Determine el torque neto en la situación ilustrada
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{figures/torque-neto1.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Segunda ley de newton rotacional}
+    El torque neto que actúa sobre un sistema es directamente proporcional a la aceleración angular del sistema. La constante de proporcionalidad es el momento de inercia del sistema \begin{equation*}
+        \sum_{i=1}^N\vec{\tau}_i = I\vec{\alpha}\,.
+    \end{equation*} \begin{center}
+        \textit{¡El momento de inercia se presenta como una oposición al cambio de estado rotacional de un sistema!}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Ejemplo 1}
+    Determine la aceleración angular dada la situación de la figura.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\linewidth]{figures/ac-ang-y-torque.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Ejemplo 2}
+    La figura muestra un deslizador de masa $m_1$ que se mueve sin fricción sobre un riel horizontal de aire. Está sujeto a un objeto de masa $m_2$ con una cuerda de masa despreciable. La polea tiene radio $R$
+y momento de inercia $I$ en torno a su eje de rotación. Cuando el objeto colgante se suelta,
+acelera hacia abajo, el deslizador acelera a la derecha y la cuerda hace girar la polea sin
+deslizarse ni estirarse. Ordene, de mayor a menor, las magnitudes de las siguientes fuerzas
+que actúan durante el movimiento.
+
+\begin{itemize}
+    \item[\textit{i.}]La fuerza de tensión (magnitud $T_1$) en la parte
+horizontal de la cuerda;
+     \item[\textit{ii.}]la fuerza de tensión (magnitud $T_2$) en la parte vertical de
+la cuerda;
+      \item[\textit{iii.}]el peso $m_2g$ del objeto colgante.
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/ejemplo2-torque-acel.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Ejemplo 3}
+    Un libro de texto de 2.00 kg descansa sobre una superficie horizontal sin fricción. Un cable unido al libro pasa sobre una polea, cuyo diámetro es de 0.150 m, para un libro con masa de 3.00 kg que cuelga. El sistema se libera a partir del reposo, y se observa que los libros se mueven 1.20 m en 0.800 s. \begin{itemize}
+        \item[a)] Cuál es la tensión en cada parte de la cuerda?
+        \item[b)] ¿Cuál es el momento de inercia de la polea alrededor de su eje de rotación?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Ejemplo 4: Equilibrio rotacional}
+    Dada lo situación mostrada en la figura, determine el valor de la fuerza normale que aplica cada viga ($A$ y $B$) sobre el andamio.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/equilibrio-rot1.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \LARGE Rotación de un cuerpo\\ rígido \textbf{sobre un eje móvil}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Traslación y rotación combinadas}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.35\linewidth]{figures/rot-trasl-theo.png}
+\end{figure}
+
+    \begin{equation}
+        K=\frac{1}{2}mv_{\mathrm{cm}}^2+\frac{1}{2}I_{\mathrm{cm}}\omega^2
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Rodar sin resbalar}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/rodar-sin-resbalar.png}
+    \end{figure}
+
+    \begin{center}
+        ¡Un sistema uniforme de radio $R$ que rueda sin resbalar es equivalente a uno que gira alrededor de un eje que se encuentra a una distancia $R$ de su centro de masa!
+    \end{center}
+\end{frame}
+
+\begin{frame}{La dinámica de rodar sin resbalar}
+
+Para un yoyo cilíndrico de masa $M$ y radio $R$ que desciende una altura $h$, determine
+
+\begin{itemize}
+    \item[a)] La velocidad final de su centro de masa.
+    \item[b)] La aceleración de su centro de masa.
+    \item[c)] La tensión de la cuerda.
+\end{itemize}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.35\linewidth]{figures/yoyo.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Otro ejemplo}
+
+    Una bola de bolos sólida rueda sin resbalar bajando por una rampa
+que está inclinada un ángulo $\beta$ con la horizontal. ¿Qué aceleración tiene la bola y cuál es la magnitud de la fuerza de fricción sobre esta? Trate la bola como esfera sólida uniforme, despreciando los agujeros.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{figures/bola-de-bolos-rampa.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Otro ejemplo}
+    Una canica uniforme baja rodando por un tazón simétrico, partiendo del reposo en el borde izquierdo. El borde está una distancia $h$ arriba del fondo del tazón. La mitad izquierda del tazón es lo bastante áspera como para que la canica ruede sin resbalar, pero la mitad derecha no tiene fricción porque está lubricada con aceite.
+
+    \begin{itemize}
+        \item[a)] ¿Qué
+altura alcanzará la canica en el lado resbaloso, medida verticalmente
+desde el fondo?
+\item[b)] ¿Qué altura alcanzaría la canica si el lado derecho
+fuera tan áspero como el izquierdo?
+\item[c)] ¿Cómo explica el hecho de que
+la canica alcance más altura en el lado derecho con fricción que sin
+fricción?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Ejemplo}
+    Una bola de bolos sube rodando sin resbalar por una rampa que forma un ángulo $\beta$ con la horizontal. (Recordar ejemplo efectuado). Trate la bola como una esfera sólida uniforme, sin tomar en cuenta los agujeros.
+    
+    \begin{itemize}
+        \item[a)] Dibuje
+el diagrama de cuerpo libre de la bola.
+Explique por qué la fricción debe
+tener dirección cuesta arriba.
+\item[b)] ¿Qué
+aceleración tiene el centro de masa
+de la bola?
+\item[c)] ¿Qué coeficiente mínimo de fricción estática se necesita
+para que la bola no resbale?
+    \end{itemize}
+\end{frame}
